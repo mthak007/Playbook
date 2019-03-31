@@ -7,8 +7,10 @@
   vars:
    ansible_version1: 2.7
    software_install: git
+  vars_files:
+   config/software_web.yml
   tasks:
    - name: Install Git on Client hosts using {{ ansible_version1 }}
-     yum: pkg={{ software_install }} state=installed
+     yum: pkg={{ git_client }} state=installed
    - name: Install httpd on Client hosts
-     yum: pkg=httpd state=installed
+     yum: pkg={{ httpd_server }} state=installed

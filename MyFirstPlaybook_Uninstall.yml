@@ -1,0 +1,11 @@
+--- # this is my first Playbook
+- hosts: all
+  user: ansadmin
+  become: true
+  connection: ssh
+  gather_facts: no
+  tasks:
+   - name: UnInstall Git on Client hosts
+     yum: pkg=git state=absent
+   - name: Install httpd on Client hosts
+     yum: pkg=httpd state=absent

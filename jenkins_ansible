@@ -11,6 +11,8 @@ node('Ansibel_Node'){
     
     ansible --version
   
+  
+  '''
   }
 
 }

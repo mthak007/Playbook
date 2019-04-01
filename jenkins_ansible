@@ -1,5 +1,5 @@
 #!/usr/bin/env groovy
-node('Ansibel_Node'){
+node('Ansible_Node'){
 
   stage('SCM checkout'){
   git 'https://github.com/mthak007/Playbook.git'

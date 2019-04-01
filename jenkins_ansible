@@ -7,7 +7,7 @@ node('Ansibel_Node'){
 
   stage('Run Playbook'){
   
-  sh ...
+  sh '''
     
     ansible --version
   

@@ -10,6 +10,9 @@ node('Ansible_Node'){
   sh '''
     
     ansible --version
+    
+    ansible-playbook /home/ansadmin/Playbook/Ansible-Playbook/MyFirstPlaybook_install.yml
+
   
   
   '''
